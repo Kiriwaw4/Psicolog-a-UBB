@@ -1,1 +1,127 @@
+/* ============================= */
+/* FUENTE STUDY ALONE */
+/* ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Study+Alone&display=swap');
+
+/* ============================= */
+/* ESTILOS GENERALES */
+/* ============================= */
+body {
+  font-family: 'Study Alone', cursive;
+  background: #FDEEF5;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* PROGRESO SCT */
+/* ============================= */
+.progreso {
+  max-width: 420px;
+  margin: 0 auto 25px;
+  text-align: center;
+}
+
+.barra {
+  background: #E9EDF6;
+  height: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#barra {
+  height: 100%;
+  width: 0%;
+  background: #FDBFD3;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* ============================= */
+/* MALLA */
+/* ============================= */
+.malla {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* ============================= */
+/* SEMESTRES */
+/* ============================= */
+.semestre {
+  background: #E9EDF6;
+  padding: 15px;
+  min-width: 260px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.semestre h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* RAMOS */
+/* ============================= */
+.ramo {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.ramo:hover {
+  transform: scale(1.02);
+}
+
+/* ============================= */
+/* COLORES POR ÁREA */
+/* ============================= */
+.basica {
+  background: #FDC9DA;
+}
+
+.disciplinaria {
+  background: #FDBFD3;
+}
+
+.practica {
+  background: #FFCFE2;
+}
+
+.integral {
+  background: #E9EDF6;
+}
+
+.electivo {
+  background: #FDEEF5;
+}
+
+/* ============================= */
+/* RAMO APROBADO */
+/* ============================= */
+.aprobado {
+  background: #FDC9DA !important;
+  text-decoration: line-through;
+  opacity: 0.85;
+}
+
+/* ============================= */
+/* RAMO BLOQUEADO */
+/* ============================= */
+.bloqueado {
+  background: #E9EDF6 !important;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
 
