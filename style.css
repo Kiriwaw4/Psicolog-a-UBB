@@ -125,3 +125,17 @@ h1 {
   opacity: 0.5;
 }
 
+/* ============================= */
+/* COLOR POR DEFECTO (SIEMPRE VISIBLE) */
+/* ============================= */
+.ramo {
+  background: #FFCFE2;
+}
+
+/* ============================= */
+/* RAMO APROBADO */
+/* ============================= */
+.ramo.aprobado {
+  background: #FDC9DA !important;
+  text-decoration: line-through;
+}
