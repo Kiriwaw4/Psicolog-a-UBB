@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Psicología UBB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Malla Curricular Psicología UBB</h1>
+
+<div class="progreso">
+  <p><strong>SCT aprobados:</strong> <span id="sct">0</span> / 300</p>
+  <div class="barra">
+    <div id="barra"></div>
+  </div>
+</div>
+
+<div class="malla">
+
+<!-- AÑO 1 -->
+<div class="semestre">
+<h2>I Semestre</h2>
+<div class="ramo basica" data-id="historia" data-sct="6">Historia y Fundamentos de la Psicología</div>
+<div class="ramo disciplinaria" data-id="psicobiologia" data-sct="7">Psicobiología</div>
+<div class="ramo integral" data-id="taller1" data-sct="3">Taller de Desarrollo Personal I</div>
+<div class="ramo basica" data-id="socio" data-sct="6">Socioantropología</div>
+<div class="ramo basica" data-id="procesos" data-sct="6">Procesos Psicológicos</div>
+<div class="ramo integral" data-id="formacion1" data-sct="2">Formación Integral Institucional</div>
+</div>
+
+<div class="semestre">
+<h2>II Semestre</h2>
+<div class="ramo basica bloqueado" data-id="epistemologia" data-sct="6" data-prereq="historia">Epistemología</div>
+<div class="ramo disciplinaria bloqueado" data-id="neuro" data-sct="5" data-prereq="psicobiologia">Neuropsicología</div>
+<div class="ramo integral bloqueado" data-id="taller2" data-sct="3" data-prereq="taller1">Taller de Desarrollo Personal II</div>
+<div class="ramo basica bloqueado" data-id="teorias" data-sct="6" data-prereq="procesos">Teorías y Sistemas Psicológicos</div>
+<div class="ramo disciplinaria bloqueado" data-id="desarrollo1" data-sct="6" data-prereq="procesos">Psicología del Desarrollo I</div>
+<div class="ramo integral bloqueado" data-id="formacion2" data-sct="2" data-prereq="formacion1">Formación Integral Institucional</div>
+</div>
+
+<!-- AÑO 2 -->
+<div class="semestre">
+<h2>III Semestre</h2>
+<div class="ramo basica" data-id="etica" data-sct="3">Ética Profesional</div>
+<div class="ramo disciplinaria" data-id="estadistica" data-sct="5">Psicoestadística</div>
+<div class="ramo disciplinaria" data-id="personalidad" data-sct="6">Psicología de la Personalidad</div>
+<div class="ramo disciplinaria" data-id="social1" data-sct="6">Psicología Social I</div>
+<div class="ramo disciplinaria" data-id="desarrollo2" data-sct="6">Psicología del Desarrollo II</div>
+<div class="ramo integral" data-id="ingles1" data-sct="4">Inglés Comunicacional I</div>
+</div>
+
+<div class="semestre">
+<h2>IV Semestre</h2>
+<div class="ramo disciplinaria bloqueado" data-id="evaluacion" data-sct="5" data-prereq="estadistica">Evaluación de Procesos Socioafectivos</div>
+<div class="ramo disciplinaria" data-id="familia" data-sct="5">Psicología de la Familia</div>
+<div class="ramo disciplinaria bloqueado" data-id="social2" data-sct="6" data-prereq="social1">Psicología Social II</div>
+<div class="ramo disciplinaria" data-id="clinica" data-sct="6">Psicología Clínica</div>
+<div class="ramo integral" data-id="ingles2" data-sct="4">Inglés Comunicacional II</div>
+</div>
+
+<!-- AÑO 3 -->
+<div class="semestre">
+<h2>V Semestre</h2>
+<div class="ramo basica" data-id="metodo1" data-sct="5">Metodología de la Investigación Cualitativa</div>
+<div class="ramo disciplinaria" data-id="educacional1" data-sct="5">Psicología Educacional I</div>
+<div class="ramo disciplinaria" data-id="organizacional1" data-sct="5">Psicología Organizacional I</div>
+<div class="ramo disciplinaria" data-id="intervencion" data-sct="5">Fundamentos de la Intervención Psicosocial</div>
+<div class="ramo disciplinaria" data-id="psicopatologia1" data-sct="5">Psicopatología I</div>
+<div class="ramo integral" data-id="ingles3" data-sct="4">Inglés Comunicacional III</div>
+</div>
+
+<div class="semestre">
+<h2>VI Semestre</h2>
+<div class="ramo basica bloqueado" data-id="metodo2" data-sct="5" data-prereq="metodo1">Metodología de la Investigación Cuantitativa</div>
+<div class="ramo disciplinaria" data-id="educacional2" data-sct="5">Psicología Educacional II</div>
+<div class="ramo disciplinaria" data-id="organizacional2" data-sct="5">Psicología Organizacional II</div>
+<div class="ramo disciplinaria" data-id="comunitaria1" data-sct="5">Psicología Comunitaria I</div>
+<div class="ramo disciplinaria bloqueado" data-id="psicopatologia2" data-sct="5" data-prereq="psicopatologia1">Psicopatología II</div>
+<div class="ramo integral" data-id="ingles4" data-sct="4">Inglés Comunicacional IV</div>
+</div>
+
+<!-- AÑO 4 -->
+<div class="semestre">
+<h2>VII Semestre</h2>
+<div class="ramo practica" data-id="investigacion1" data-sct="7">Actividad de Investigación I</div>
+<div class="ramo disciplinaria" data-id="educacional3" data-sct="5">Psicología Educacional III</div>
+<div class="ramo disciplinaria" data-id="organizacional3" data-sct="5">Psicología Organizacional III</div>
+<div class="ramo disciplinaria" data-id="comunitaria2" data-sct="5">Psicología Comunitaria II</div>
+<div class="ramo disciplinaria" data-id="psicoterapia" data-sct="8">Psicoterapia</div>
+<div class="ramo integral" data-id="extra1" data-sct="2">Formación Integral Extraprogramática</div>
+</div>
+
+<div class="semestre">
+<h2>VIII Semestre</h2>
+<div class="ramo practica bloqueado" data-id="investigacion2" data-sct="7" data-prereq="investigacion1">Actividad de Investigación II</div>
+<div class="ramo practica" data-id="integracion" data-sct="2">Integración Clínica Profesional</div>
+<div class="ramo disciplinaria" data-id="grupal" data-sct="5">Psicoterapia de Grupo</div>
+<div class="ramo integral" data-id="extra2" data-sct="3">Formación Integral Extraprogramática</div>
+</div>
+
+<!-- AÑO 5 -->
+<div class="semestre">
+<h2>IX Semestre</h2>
+<div class="ramo practica bloqueado" data-id="practica1" data-sct="22">Práctica Profesional I</div>
+<div class="ramo electivo" data-id="electivo1" data-sct="4">Electivo I</div>
+<div class="ramo electivo" data-id="electivo2" data-sct="4">Electivo II</div>
+</div>
+
+<div class="semestre">
+<h2>X Semestre</h2>
+<div class="ramo practica bloqueado" data-id="practica2" data-sct="22" data-prereq="practica1">Práctica Profesional II</div>
+<div class="ramo electivo" data-id="electivo3" data-sct="4">Electivo III</div>
+<div class="ramo electivo" data-id="electivo4" data-sct="4">Electivo IV</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
